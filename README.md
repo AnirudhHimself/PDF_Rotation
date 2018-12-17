@@ -4,7 +4,7 @@ Rotates PDFs
 ## The Issue
 Sometimes I recieve pdf documents that aren't oriented the correct way. Sometimes these documents even have hundreds of pages.   
 
-## The Alternatives 
+## Possible Solutions 
 1. Use a questionable online tool that rotates them for you.
 2. Manually click rotate on every page wasting precious minutes that could spend playing with a dog.
 3. Crane the head in a painful, neck snapping position to read it.
