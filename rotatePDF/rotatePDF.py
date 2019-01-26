@@ -2,7 +2,7 @@ import PyPDF2
 import sys
 
 def main():
-	if(len(sys.argv) < 4):
+	if(len(sys.argv) < 3):
 		print("Usage: $ python rotatePdf.py direction fileToRotate")
 	elif(str(sys.argv[1]) == "clockwise"):
 		rotateClockwise(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
