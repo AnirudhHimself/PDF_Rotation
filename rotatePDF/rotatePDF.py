@@ -5,11 +5,11 @@ def main():
 	if(len(sys.argv) < 3):
 		print("Usage: $ python rotatePdf.py direction fileToRotate")
 	elif(str(sys.argv[1]) == "clockwise"):
-		rotateClockwise(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
+		rotateClockwise(str(sys.argv[2]), str(sys.argv[2])[:-3]+"Rotated.pdf")
 	elif(str(sys.argv[1]) == "counter"):
-		rotateCounterClockwise(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
+		rotateCounterClockwise(str(sys.argv[2]), str(sys.argv[2])[:-3]+"Rotated.pdf")
 	else:
-		flip(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
+		flip(str(sys.argv[2]), str(sys.argv[2])[:-3]+"Rotated.pdf")
 
 def flip(original, new):
 	pdfFileObj = open(original, 'rb')
