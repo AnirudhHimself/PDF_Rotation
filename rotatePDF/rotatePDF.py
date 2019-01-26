@@ -3,13 +3,13 @@ import sys
 
 def main():
 	if(len(sys.argv) < 4):
-		print("Usage: $ python rotatePdf.py direction fileToRotate rotatedFile")
+		print("Usage: $ python rotatePdf.py direction fileToRotate")
 	elif(str(sys.argv[1]) == "clockwise"):
-		rotateClockwise(str(sys.argv[2]), str(sys.argv[3]))
+		rotateClockwise(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
 	elif(str(sys.argv[1]) == "counter"):
-		rotateCounterClockwise(str(sys.argv[2]), str(sys.argv[3]))
+		rotateCounterClockwise(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
 	else:
-		flip(str(sys.argv[2]), str(sys.argv[3]))
+		flip(str(sys.argv[2]), str(sys.argv[2]+"Rotated"))
 
 def flip(original, new):
 	pdfFileObj = open(original, 'rb')
